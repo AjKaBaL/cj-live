@@ -1,0 +1,12 @@
+# CJ LIVE — por AjKaBaL
+node_modules/
+.env
+audio/
+data/
+usuario-tiktok.txt
+falas-san-andreas/
+# áudios do jogo (Rockstar): cada um gera os seus com tools/sa-*.js
+falas-originais/**/*.wav
+falas-originais/**/*.mp3
+*.zip
+*.oiv

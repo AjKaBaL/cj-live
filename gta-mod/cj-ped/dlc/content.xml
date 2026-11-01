@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CDataFileMgr__ContentsOfDataFileXml>
+  <disabledFiles />
+  <includedXmlFiles />
+  <includedDataFiles />
+  <dataFiles>
+    <Item>
+      <filename>dlc_cjlive:/common/data/peds.meta</filename>
+      <fileType>PED_METADATA_FILE</fileType>
+      <overlay value="false" />
+      <disabled value="true" />
+      <persistent value="false" />
+    </Item>
+    <Item>
+      <filename>dlc_cjlive:/%PLATFORM%/streamedpeds_cjlive.rpf</filename>
+      <fileType>RPF_FILE</fileType>
+      <overlay value="false" />
+      <disabled value="true" />
+      <persistent value="true" />
+    </Item>
+  </dataFiles>
+  <contentChangeSets>
+    <Item>
+      <changeSetName>CJLIVE_AUTOGEN</changeSetName>
+      <filesToDisable />
+      <filesToEnable>
+        <Item>dlc_cjlive:/common/data/peds.meta</Item>
+        <Item>dlc_cjlive:/%PLATFORM%/streamedpeds_cjlive.rpf</Item>
+      </filesToEnable>
+      <txdToLoad />
+      <txdToUnload />
+      <residentResources />
+      <unregisterResources />
+    </Item>
+  </contentChangeSets>
+  <patchFiles />
+</CDataFileMgr__ContentsOfDataFileXml>

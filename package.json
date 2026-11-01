@@ -1,0 +1,20 @@
+{
+  "name": "cj-live",
+  "version": "1.0.0",
+  "description": "CJ LIVE: live automática do TikTok com o CJ no GTA V (IA, voz, overlay e mod). Por AjKaBaL.",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "sim": "node index.js --sim",
+    "mod": "node tools/abrir.js --so-mod"
+  },
+  "keywords": [],
+  "author": "AjKaBaL",
+  "license": "ISC",
+  "type": "commonjs",
+  "dependencies": {
+    "msedge-tts": "^2.1.1",
+    "tiktok-live-connector": "^2.5.0",
+    "ws": "^8.22.0"
+  }
+}

@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<!-- CJ LIVE — por AjKaBaL -->
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>CJ LIVE Overlay</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Bangers&family=Nunito:ital,wght@0,800;0,900;1,800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="overlay.css">
+</head>
+<body>
+    <!-- Palco fixo 1080x1920 (fonte de navegador do OBS na vertical) -->
+    <div id="stage">
+        <!-- Missões da galera: sobem de nível e vão trocando -->
+        <section id="goals"></section>
+
+        <!-- Rankings: quem mais deu presente (esquerda) e quem mais curtiu (direita) -->
+        <section class="rank gifters" id="gifters" hidden>
+            <h2 id="gifters-title"></h2>
+            <ol></ol>
+        </section>
+        <section class="rank fans" id="fans" hidden>
+            <h2 id="fans-title"></h2>
+            <ol></ol>
+        </section>
+
+        <!-- Cards dos presentes: aparecem de tempos em tempos -->
+        <section id="cards"></section>
+
+        <!-- Card da fala do CJ: quem perguntou, o que perguntou e a resposta -->
+        <section id="reply" class="neon" hidden>
+            <div class="reply-avatar"><img id="reply-avatar" alt=""></div>
+            <div class="reply-body">
+                <div class="reply-user" id="reply-user"></div>
+                <div class="reply-question" id="reply-question"></div>
+                <p class="reply-text" id="reply-text"></p>
+            </div>
+            <div class="reply-bars"><i></i><i></i><i></i><i></i></div>
+        </section>
+
+        <section id="alert" class="neon" hidden>
+            <img class="alert-avatar" id="alert-avatar" alt="">
+            <div class="alert-body">
+                <div class="alert-user" id="alert-user"></div>
+                <div class="alert-gift" id="alert-gift-text"></div>
+                <div class="alert-label" id="alert-label"></div>
+            </div>
+            <img class="alert-gift-img" id="alert-gift-img" alt="">
+        </section>
+
+        <!-- Meta de curtidas: escondida, aparece quando chegam curtidas ou para pedir like -->
+        <section id="likegoal" class="neon" hidden>
+            <div class="like-heart">❤️</div>
+            <div class="like-body">
+                <div class="like-title" id="like-title"></div>
+                <div class="like-bar"><div class="like-fill" id="like-fill"></div><span id="like-count"></span></div>
+            </div>
+            <div class="like-prize">🎁<span>?</span></div>
+        </section>
+
+        <!-- Animações: presente recebido e efeitos das ações -->
+        <div id="fx"></div>
+
+        <div id="status">desconectado</div>
+    </div>
+    <script src="fx.js"></script>
+    <script src="overlay.js"></script>
+</body>
+</html>

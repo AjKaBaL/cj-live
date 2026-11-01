@@ -1,0 +1,197 @@
+{
+  "pc": {
+    "_comentario": "Caminhos deste computador. gtaLaunch: Epic = com.epicgames.launcher://apps/9d2d0eb64d5c44529cece33fe2a46482?action=launch&silent=true | Steam = steam://rungameid/271590 | ou o caminho do PlayGTAV.exe",
+    "gtaDir": "D:/GTAV",
+    "gtaLaunch": "com.epicgames.launcher://apps/9d2d0eb64d5c44529cece33fe2a46482?action=launch&silent=true",
+    "obsExe": "C:/Program Files/obs-studio/bin/64bit/obs64.exe",
+    "obsArgs": []
+  },
+
+  "ai": {
+    "models": ["gemini-3.5-flash", "gemini-3.5-flash-lite", "gemini-3.6-flash", "gemini-flash-lite-latest", "gemini-3.1-flash-lite"],
+    "modelTimeoutMs": 4000,
+    "totalTimeoutMs": 9000,
+    "temperature": 1.0,
+    "maxChars": 220,
+    "historySize": 12
+  },
+
+  "voice": {
+    "name": "pt-BR-AntonioNeural",
+    "rate": 1.4,
+    "pitch": "-4Hz",
+    "playLocal": true,
+    "maxQueue": 6,
+    "rvc": {
+      "enabled": true,
+      "device": "gpu",
+      "python": "D:/Applio/env/Scripts/python.exe",
+      "applioDir": "D:/Applio",
+      "model": "D:/Applio/logs/cj/model.pth",
+      "index": "D:/Applio/logs/cj/model.index",
+      "pitch": 1,
+      "indexRate": 0.5,
+      "protect": 0.33,
+      "timeoutMs": 10000
+    },
+    "iconic": {
+      "_comentario": "chance = probabilidade de tocar a fala original do jogo em cada momento. idleEverySec = de quanto em quanto tempo (mín, máx) o CJ solta uma fala da pasta aleatorio quando a live está quieta.",
+      "idleEverySec": [120, 300],
+      "chance": { "aleatorio": 1, "policia": 1, "presente-grande": 0.5, "missao": 0.6, "seguidor": 0.4, "despistou": 0.6, "atacado": 0.5, "caiu": 0.5, "bateu": 0.5, "tiroteio": 0.5, "explosao": 0.5, "briga": 0.7, "manobra": 0.5, "vandalismo": 0.6, "tiro_pro_alto": 0.6, "default": 0.3 }
+    }
+  },
+
+  "chat": {
+    "replyChance": 0.35,
+    "alwaysReplyIfMentions": ["cj", "carl", "johnson"],
+    "alwaysReplyToQuestions": true,
+    "userCooldownSec": 30,
+    "maxRepliesPerMinute": 6,
+    "minLength": 3,
+    "ignoreUsers": [],
+    "blockedWords": ["pix", "chave pix", "telefone", "endereço", "senha", "nude", "suicid", "matar"],
+    "blockedNameParts": [],
+    "ignorePatterns": ["^[^a-zA-ZÀ-ú0-9]+$", "^(k|ks|kk|rs|haha)+$"]
+  },
+
+  "moderation": {
+    "_comentario": "Palavrão, ofensa ou spam = falta. 1ª: ignora. 2ª: o CJ dá um toque. strikesToMute (3ª): castigo, o CJ não responde mais e a pessoa entra na lista do menu Moderação (para banir no app). Faltas valem por strikeWindowMin minutos.",
+    "strikesToMute": 3,
+    "strikeWindowMin": 30,
+    "spamRepeats": 4,
+    "extraWords": []
+  },
+
+  "gifts": {
+    "bigGiftDiamonds": 99,
+    "actions": {
+      "Rose": { "action": "aplaudir", "label": "CJ aplaude" },
+      "Finger Heart": { "action": "flexionar", "label": "Mostra o muque" },
+      "Perfume": { "action": "chuva_dinheiro", "label": "Chuva de dinheiro" },
+      "Doughnut": { "action": "grove_aliados", "label": "Chama a Grove" },
+      "Hand Hearts": { "action": "ballas", "label": "Ballas atacam" },
+      "Galaxy": { "action": "tanque", "label": "CJ pega um tanque" }
+    },
+    "tiers": [
+      { "minDiamonds": 1, "actions": ["aplaudir", "acenar", "dancar", "flexionar", "maluquice"] },
+      { "minDiamonds": 10, "actions": ["noite", "bmx", "chuva_dinheiro", "academia", "pier", "neve", "bebado", "zerinho", "corrida"] },
+      { "minDiamonds": 50, "actions": ["grove_aliados", "tempestade", "voar", "moto", "empinar", "camera_lenta", "lua", "andar_trevor", "rampa", "tiro_pro_alto", "vandalismo"] },
+      { "minDiamonds": 100, "actions": ["ballas", "policia", "queda_livre", "fogos", "palhacos", "chuva_vacas", "furia_trevor", "briga"] },
+      { "minDiamonds": 500, "actions": ["carro_tunado", "explodir_tudo", "pumas", "chuva_carros", "tornado", "queda_aviao"] },
+      { "minDiamonds": 1000, "actions": ["tanque"] }
+    ],
+    "actionLabels": {
+      "aplaudir": "CJ aplaude",
+      "acenar": "CJ acena pra galera",
+      "dancar": "CJ dança",
+      "flexionar": "Mostra o muque",
+      "noite": "Vira noite / dia",
+      "bmx": "Rolê de BMX",
+      "chuva_dinheiro": "Chuva de dinheiro",
+      "grove_aliados": "A Grove chega junto",
+      "tempestade": "Começa uma tempestade",
+      "voar": "Voa como Superman",
+      "ballas": "Os Ballas atacam",
+      "policia": "4-5 estrelas: AK ou fuga",
+      "queda_livre": "Queda livre do céu",
+      "fogos": "Fogos na Grove",
+      "carro_tunado": "Carro tunado da oficina",
+      "explodir_tudo": "Explode tudo",
+      "pumas": "Ataque de pumas",
+      "tanque": "CJ pega um tanque",
+      "moto": "Rolê de PCJ-600",
+      "academia": "Malhar na Muscle Beach",
+      "pier": "Pescar no píer",
+      "neve": "Neve em Los Santos",
+      "bebado": "CJ fica tonto",
+      "empinar": "Rolê empinando a moto",
+      "camera_lenta": "Modo Matrix (câmera lenta)",
+      "lua": "Gravidade da Lua",
+      "palhacos": "Invasão de palhaços",
+      "chuva_vacas": "Chuva de vacas",
+      "chuva_carros": "Chuva de carros",
+      "tornado": "Tornado: carros pro céu",
+      "queda_aviao": "Avião cai do céu",
+      "maluquice": "Palhaçada do CJ",
+      "andar_trevor": "Anda igual o Trevor",
+      "furia_trevor": "Fúria do Trevor",
+      "zerinho": "Zerinho com o carro",
+      "rampa": "Pulo na rampa",
+      "vandalismo": "Destrói um carro na AK",
+      "briga": "Briga de rua",
+      "tiro_pro_alto": "Tiro pro alto",
+      "corrida": "Sai correndo",
+      "ir_grove": "Ir pra casa na Grove",
+      "ir_praia": "Ir pra praia",
+      "ir_vinewood": "Ir pra Vinewood",
+      "ir_centro": "Ir pro centro"
+    }
+  },
+
+  "overlay": {
+    "_comentario": "Cards dos presentes aparecem por cardsShowSec a cada cardsEverySec (e quando chega um presente). Os títulos dos rankings podem ser trocados aqui.",
+    "cardsShowSec": 8,
+    "cardsEverySec": 150,
+    "giftersTitle": "PATRÕES DA GROVE",
+    "fansTitle": "FAMÍLIA GROVE STREET"
+  },
+  "likeGoal": {
+    "_comentario": "Meta de curtidas escondida: aparece quando chegam curtidas e a cada reminderEverySec pedindo like. A cada 'every' curtidas solta uma surpresa sorteada de 'actions'; a próxima meta cresce 'growth' vezes.",
+    "every": 300,
+    "growth": 1.2,
+    "reminderEverySec": 150,
+    "actions": ["maluquice", "andar_trevor", "furia_trevor", "dancar", "fogos", "chuva_dinheiro", "neve", "lua", "chuva_vacas"]
+  },
+
+  "screenshots": {
+    "_comentario": "Prints automáticos em Imagens\\CJ LIVE (só com o GTA na frente da tela): logo depois de cada ação e de vez em quando (randomEveryMin). enabled false desliga.",
+    "enabled": true,
+    "folder": "CJ LIVE",
+    "delaySec": 3,
+    "minGapSec": 40,
+    "randomEveryMin": [4, 9]
+  },
+
+  "places": {
+    "_comentario": "A galera pede no chat para o CJ ir a um lugar. Precisa de votesNeeded pessoas diferentes pedindo o mesmo lugar em windowSec. Só os lugares da lista (todos em terra firme); qualquer outro pedido é ignorado.",
+    "askPattern": "\\b(vai|va|vamo|vamos|bora|ir|leva|partiu|volta|cola|corre)\\b",
+    "votesNeeded": 3,
+    "windowSec": 120,
+    "cooldownSec": 180,
+    "samePlaceCooldownSec": 600,
+    "list": [
+      { "id": "casa", "name": "pra sua casa na Grove Street", "action": "ir_grove", "words": ["sua casa", "tua casa", "pra casa", "pra grove", "na grove", "a grove", "quebrada"] },
+      { "id": "praia", "name": "pra praia", "action": "ir_praia", "words": ["praia", "beach"] },
+      { "id": "academia", "name": "pra academia", "action": "academia", "words": ["academia", "malhar", "treinar", "muscle"] },
+      { "id": "pier", "name": "pro píer", "action": "pier", "words": ["pier", "pescar"] },
+      { "id": "vinewood", "name": "pra Vinewood", "action": "ir_vinewood", "words": ["vinewood", "letreiro"] },
+      { "id": "centro", "name": "pro centro", "action": "ir_centro", "words": ["centro", "legion"] }
+    ]
+  },
+
+  "missions": {
+    "_comentario": "slots = quantas missões ficam na tela. Ao completar, a meta cresce (growth) e a missão evolui (evolveChance) ou troca por outra. kind: likes, diamonds, follows ou chats (comentários).",
+    "slots": 2,
+    "growth": 1.5,
+    "evolveChance": 0.4,
+    "pool": [
+      { "kind": "likes", "goal": 1000, "name": "Limpar a Grove Street", "action": "fogos" },
+      { "kind": "likes", "goal": 2500, "name": "Expulsar os Ballas", "action": "ballas" },
+      { "kind": "likes", "goal": 1500, "name": "Treino do CJ", "action": "academia" },
+      { "kind": "likes", "goal": 2000, "name": "Natal em Los Santos", "action": "neve" },
+      { "kind": "likes", "goal": 3000, "name": "Fazenda voadora", "action": "chuva_vacas" },
+      { "kind": "likes", "goal": 5000, "name": "Dominar Los Santos", "action": "explodir_tudo" },
+      { "kind": "diamonds", "goal": 200, "name": "Pagar o Big Smoke", "action": "chuva_dinheiro" },
+      { "kind": "diamonds", "goal": 300, "name": "Tunar o carro na oficina", "action": "carro_tunado" },
+      { "kind": "diamonds", "goal": 500, "name": "Engarrafamento do céu", "action": "chuva_carros" },
+      { "kind": "diamonds", "goal": 1000, "name": "Tanque do mercado negro", "action": "tanque" },
+      { "kind": "diamonds", "goal": 700, "name": "Espaço aéreo fechado", "action": "queda_aviao" },
+      { "kind": "follows", "goal": 10, "name": "Recrutar a gangue", "action": "grove_aliados" },
+      { "kind": "follows", "goal": 15, "name": "Astronauta da Grove", "action": "lua" },
+      { "kind": "follows", "goal": 20, "name": "Despistar a polícia", "action": "policia" },
+      { "kind": "chats", "goal": 80, "name": "Fofoca na Grove Street", "action": "bebado" },
+      { "kind": "chats", "goal": 120, "name": "Circo dos horrores", "action": "palhacos" },
+      { "kind": "chats", "goal": 100, "name": "Seguir o maldito trem", "action": "empinar" }
+    ]
+  }
+}

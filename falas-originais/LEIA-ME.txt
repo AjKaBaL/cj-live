@@ -1,0 +1,27 @@
+FALAS ORIGINAIS DO CJ
+=====================
+
+Coloque aqui os áudios originais do CJ (.mp3 ou .wav). Cada pasta é um momento da live:
+
+  policia          quando a polícia começa a perseguir  (ex.: "Ah shit, here we go again.mp3")
+  despistou        quando ele despista a polícia
+  atacado          quando alguém bate ou atira nele
+  tiroteio         quando tem tiroteio perto
+  explosao         quando algo explode perto
+  bateu            quando ele bate o carro
+  caiu             quando ele cai / leva tombo
+  presente-grande  quando chega um presente grande
+  missao           quando a galera completa uma missão
+  seguidor         quando alguém segue a live (boas-vindas)
+  briga            quando ele arruma briga na rua
+  manobra          zerinho, rampa, empinar
+  vandalismo       quando destrói um carro
+  tiro_pro_alto    quando se exibe / comemora
+  aleatorio        fala solta de vez em quando, com a live quieta
+
+- O nome do arquivo vira a legenda na tela. Exemplo: "Grove Street for life!.mp3".
+- Pode ter vários arquivos por pasta: ele sorteia sem repetir até tocar todas.
+- Pasta vazia = nesse momento ele só fala em português, com a IA.
+- A chance de tocar fica em config.json -> voice -> iconic -> chance (0 = nunca, 1 = sempre).
+- Os áudios são do jogo GTA San Andreas (Rockstar). Use áudios da sua própria cópia do jogo:
+  o README.md principal ensina a tirar as falas do seu San Andreas automaticamente.
